@@ -7,7 +7,7 @@ Package.describe({
 
 function configurePackages(api) {
   api.versionsFrom(['1.8.2', '1.12', '2.3', '3.0-beta.0']);
-  api.use(['typescript', 'tracker', 'reactive-dict', 'session', 'ejson']);
+  api.use(['typescript@3.7.0 || 4.1.2 || 4.3.2 || 5.4.3', 'tracker', 'reactive-dict', 'session', 'ejson']);
   // If `accounts-base` is loaded, we have to make sure that this package is
   // loaded after `accounts-base` is, so we specify `weak: true` here
   api.use('accounts-base', { weak: true });
